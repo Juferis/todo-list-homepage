@@ -1,0 +1,105 @@
+.form,
+.greetings {
+  display: none;
+}
+.form input {
+  width: 300px;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+.greeting-box {
+  font-size: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.greeting-box h4 {
+  margin: 3px;
+}
+.js-title {
+  font-size: 150px;
+}
+.js-day {
+  color: white;
+  font-size: 30px;
+}
+.showing {
+  display: block;
+  color: white;
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.toDoList {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 400px;
+  font-size: 30px;
+}
+.toDoList li {
+  width: 100%;
+  position: relative;
+}
+.toDoList i {
+  width: 35px;
+  height: 35px;
+}
+.fa-check-circle {
+  position: absolute;
+  right: 10px;
+}
+.fa-check-circle:hover {
+  cursor: pointer;
+}
+.fa-list-ul {
+  margin-left: 0px;
+}
+.toDo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.toDoForm input {
+  width: 400px;
+  font-size: 30px;
+  opacity: 1;
+  border: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+}
+@keyframes penHover {
+  20% {
+    transform: rotateZ(20deg);
+  }
+  40% {
+    transform: rotateZ(10deg);
+  }
+  60% {
+    transform: rotateZ(-10deg);
+  }
+  80% {
+    transform: rotateZ(-20deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+.fa-pen {
+  font-size: 20px;
+  margin-left: 5px;
+}
+.fa-pen:hover {
+  cursor: pointer;
+  animation: penHover 1s linear infinite;
+}

@@ -1,0 +1,26 @@
+.clock-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -100px;
+}
+.clock {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: -150px;
+}
+.clock__second {
+  text-align: center;
+  font-size: 25px;
+  margin-left: 20px;
+}
+.js-am_or_pm {
+  color: darkgray;
+  border-bottom: 2px solid darkgray;
+  margin-top: 60px;
+}
+.js-second {
+  margin-top: -35px;
+  font-size: 50px;
+}

@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+@import "todo.css";
+@import "search.css";
+@import "weather.css";
+@import "clock.css";
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  outline: none;
+}
+.bgImage {
+  position: fixed;
+  width: 1920px;
+  height: 1080px;
+  background-size: cover;
+}

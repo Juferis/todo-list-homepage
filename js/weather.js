@@ -1,4 +1,5 @@
 const weather = document.querySelector(".js-weather");
+const gpsIcon = document.querySelector(".fa-map-marker-alt");
 
 const API_KEY = "98ff49bf8e924408732ebe67b1a1c04d";
 const COORDS = "coords";
@@ -13,7 +14,7 @@ function getWeather(lat, lon) {
     .then(function (json) {
       const temperature = json.main.temp;
       const place = json.name;
-      weather.innerText = `temperature : ${temperature} place : ${place}`;
+      weather.innerText = `온도 : ${temperature} / 위치 : ${place}`;
     });
 }
 function saveCoords(coordsObj) {
@@ -30,7 +31,7 @@ function handleGeoSucess(position) {
   getWeather(latitude, longitude);
 }
 function handleGeoError() {
-  console.log("Cant access geo location");
+  alert("위치 정보를 불러올 수 없습니다.");
 }
 function askForCoords() {
   navigator.geolocation.getCurrentPosition(handleGeoSucess, handleGeoError);
@@ -45,8 +46,11 @@ function loadCoords() {
     getWeather(parsedCoords.latitude, parsedCoords.longitude);
   }
 }
-
+function getGps() {
+  askForCoords();
+}
 function init() {
   loadCoords();
+  gpsIcon.addEventListener("click", getGps);
 }
 init();

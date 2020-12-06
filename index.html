@@ -3,26 +3,86 @@
   <head>
     <title>My Home</title>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <div class="js-clock">
-      <h1 class="js-title">00:00:00</h1>
+    <div class="search-bar">
+      <div class="search-bar__box">
+        <div class="search-bar__input">
+          <a href="https://www.naver.com/" target="blink">
+            <img src="images/naver.png" />
+          </a>
+          <form class="search-form">
+            <input
+              id="search-naver"
+              type="search"
+              placeholder="네이버에서 검색"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="search-bar__box">
+        <div class="search-bar__input">
+          <a href="https://google.com/" target="blink">
+            <img src="images/google.png" />
+          </a>
+          <form class="search-form">
+            <input
+              id="search-google"
+              type="search"
+              placeholder="구글에서 검색"
+            />
+          </form>
+        </div>
+      </div>
     </div>
-    <form class="js-form form">
-      <input type="text" placeholder="What is your name?" />
-    </form>
-    <h4 class="js-greetings greetings"></h4>
-    <form class="js-toDoForm">
-      <input type="text" placeholder="Write a to do" />
-    </form>
-    <ul class="js-toDoList"></ul>
-    <span class="js-weather"></span>
-    <script src="clock.js"></script>
-    <script src="greeting.js"></script>
-    <script src="todo.js"></script>
-    <script src="bg.js"></script>
-    <script src="weather.js"></script>
+    <div class="clock-box">
+      <div class="js-clock clock">
+        <h1 class="js-title">00:00</h1>
+        <div class="clock__second">
+          <h2 class="js-am_or_pm"></h2>
+          <h2 class="js-second">00</h2>
+        </div>
+      </div>
+      <h2 class="js-day">YYYY.MM.DD</h2>
+    </div>
+    <div>
+      <form class="js-form form">
+        <input
+          type="text"
+          class="form-input"
+          placeholder="당신의 이름을 알려주세요!"
+          required
+        />
+      </form>
+    </div>
+    <div class="greeting-box">
+      <h4 class="js-greetings greetings"></h4>
+      <h4 class="welcome"></h4>
+      <i class="fas fa-pen"></i>
+    </div>
+    <div class="toDo">
+      <form class="js-toDoForm toDoForm">
+        <input
+          type="text"
+          class="toDoForm-input"
+          required
+          placeholder="오늘 할 일"
+        />
+      </form>
+      <ul class="js-toDoList toDoList"></ul>
+    </div>
+    <div class="weather">
+      <i class="fas fa-map-marker-alt"></i>
+      <span class="js-weather"></span>
+    </div>
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/bg.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/search.js"></script>
+    <script src="https://kit.fontawesome.com/6478f529f2.js"></script>
   </body>
 </html>

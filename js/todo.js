@@ -1,5 +1,5 @@
 const toDoForm = document.querySelector(".js-toDoForm"),
-  toDoInput = toDoForm.querySelector("input"),
+  toDoInput = toDoForm.querySelector(".toDoForm-input"),
   toDoList = document.querySelector(".js-toDoList");
 
 const TODOS_LS = "toDos";
@@ -22,13 +22,13 @@ function saveTodos() {
 
 function paintToDo(text) {
   const li = document.createElement("li");
-  const delBtn = document.createElement("button");
+  const delBtn = document.createElement("i");
   const span = document.createElement("span");
   const newId = toDos.length + 1;
-  delBtn.innerText = "❌";
-  delBtn.addEventListener("click", deleteToDo);
-  span.innerText = text;
+  delBtn.classList.add("far", "fa-check-circle");
+  span.innerText = `${text}`;
   li.appendChild(span);
+  delBtn.addEventListener("click", deleteToDo);
   li.appendChild(delBtn);
   li.id = newId;
   toDoList.appendChild(li);
