@@ -68,7 +68,7 @@ function changeColor(event) {
     paintColor(color);
   } else {
     removeColor();
-    const color = "#34495e";
+    const color = "#3498db";
     localStorage.setItem(COLOR_LS, color);
     paintColor(color);
   }
