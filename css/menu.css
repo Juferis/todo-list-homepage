@@ -50,3 +50,30 @@
   outline: none;
   background: none;
 }
+.menu-box__color {
+  margin-top: 20px;
+}
+.menu-box__color--box {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  height: 180px;
+  width: 40px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  top: 30px;
+}
+.menu-box__color--box button {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  width: 25px;
+  height: 25px;
+}
+.menu-box__color--box button:hover {
+  transform: scale(1.5);
+  transition: transform 0.1s linear;
+  cursor: pointer;
+}
