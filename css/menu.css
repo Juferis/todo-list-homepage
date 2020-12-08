@@ -41,7 +41,7 @@
 }
 .menu-box__icon i:hover {
   transform: scale(1.5);
-  transition: transform 0.1s linear;
+  transition: all 0.2s linear;
 }
 .menu-box__icon button {
   font-size: 23px;
@@ -74,6 +74,15 @@
 }
 .menu-box__color--box button:hover {
   transform: scale(1.5);
-  transition: transform 0.1s linear;
+  transition: all 0.1s linear;
   cursor: pointer;
+}
+.color-btn2 {
+  background-color: black;
+}
+.color-btn3 {
+  background-color: #fd79a8;
+}
+.color-btn4 {
+  background-color: #34495e;
 }

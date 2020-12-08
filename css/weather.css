@@ -4,6 +4,7 @@
   align-items: center;
   width: 100%;
   color: white;
+  transition: all 0.2s linear;
   font-size: 25px;
   position: absolute;
   bottom: 10px;

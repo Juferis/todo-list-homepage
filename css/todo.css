@@ -10,6 +10,7 @@
   background-color: transparent;
   border: none;
   border-bottom: 2px solid white;
+  transition: all 0.2s linear;
 }
 .greeting-box {
   font-size: 25px;
@@ -17,6 +18,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  transition: all 0.2s linear;
 }
 .greeting-box h4 {
   margin: 3px;
@@ -26,11 +28,13 @@
 }
 .js-day {
   color: white;
+  transition: all 0.2s linear;
   font-size: 30px;
 }
 .showing {
   display: block;
   color: white;
+  transition: all 0.2s linear;
 }
 .bgImage {
   position: absolute;
@@ -44,6 +48,7 @@
   display: flex;
   flex-direction: column;
   color: white;
+  transition: all 0.2s linear;
   width: 400px;
   font-size: 30px;
 }
@@ -77,6 +82,7 @@
   border: none;
   border-bottom: 2px solid white;
   background-color: transparent;
+  transition: all 0.2s linear;
 }
 @keyframes penHover {
   20% {

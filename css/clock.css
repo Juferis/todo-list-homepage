@@ -9,6 +9,7 @@
   align-items: center;
   color: white;
   margin-bottom: -150px;
+  transition: all 0.2s linear;
 }
 .clock__second {
   text-align: center;
