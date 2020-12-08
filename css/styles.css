@@ -4,6 +4,7 @@
 @import "search.css";
 @import "weather.css";
 @import "clock.css";
+@import "menu.css";
 body {
   font-family: "Roboto", sans-serif;
   display: flex;

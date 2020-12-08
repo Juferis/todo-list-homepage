@@ -1,0 +1,52 @@
+.menu-box {
+  font-size: 25px;
+  position: absolute;
+  right: -50px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 100vh;
+  width: 50px;
+  z-index: 1;
+  position: fixed;
+}
+.menu-box:hover {
+  transform: translateX(-50px);
+  transition: all 0.2s linear;
+}
+.menu-box__hook {
+  position: absolute;
+  right: 60px;
+  top: 18px;
+}
+.menu-box__theme {
+  margin-top: 20px;
+}
+.menu-box__icon {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  height: 180px;
+  width: 40px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  top: 30px;
+}
+.menu-box__icon i {
+  cursor: pointer;
+}
+.menu-box__icon i:hover {
+  transform: scale(1.5);
+  transition: transform 0.1s linear;
+}
+.menu-box__icon button {
+  font-size: 23px;
+  color: white;
+  border: none;
+  outline: none;
+  background: none;
+}

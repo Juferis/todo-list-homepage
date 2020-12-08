@@ -22,7 +22,6 @@
   width: 600px;
   border-radius: 15px;
   opacity: 0.4;
-  transition: all 1s;
 }
 @keyframes hoverSearchInput {
   from {
