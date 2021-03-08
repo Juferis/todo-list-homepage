@@ -10,6 +10,8 @@
 - JS 
 - [OpenWeather API](https://openweathermap.org/)
 
+</br>
+
 ## 핵심기능
 - 사용자의 이름 기억
 - GPS를 이용한 위치 및 온도 표시
