@@ -19,3 +19,4 @@
 
 ## 핵심코드
 ![img](./api_use.jpg)
+OpenWeather API를 이용하여 위치 정보와 온도를 JSON으로 받아옵니다.
